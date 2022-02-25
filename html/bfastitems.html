@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodHub</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="meals.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.css">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/82842b77dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+    <!-- header -->
+    <header class="header">
+
+        <!-- top nav -->
+
+        <div class="navbar navbar-expand-xxl bg-dark navbar-dark">
+            <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="FoodHub" style="width: 40%; height: 40%; float: left; margin-left: 7%;"></a>
+
+            <div class="navbar navbar-expand-xxl bg-dark navbar-light justify-content-end ">
+
+                <!-- sigin and sign up -->
+                <div class="nav-icon d-flex">
+                    <a class="text-dark login_btn align-self-center mx-3" href="#myModal_btn" data-toggle="modal" data-target="#myModal_btn">
+                        <i class="far fa-user  "></i>
+                    </a>
+
+                    <!-- sigin and sign up -->
+                    <!-- shopping cart -->
+                    <div class="cart-mainf">
+                        <div class="hubcart hubcart2 cart cart box_1">
+                            <form action="cart.html" method="post">
+
+                                <input type="hidden" name="display" value="1">
+                                <button class="btn top_hub_cart mt-1" type="submit" name="submit" value="" title="Cart" style="float: right;">
+                                    <i class="fa" style="float: right;">&#xf07a;<span style="font-size: 15pt; color: rgb(241, 185, 223); border-radius: 15px;">0</span></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- //shopping cart ends here -->
+                <button class="navbar-toggler pulsate" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+            </div>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav" style="text-align: center;">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: white ;">
+                            <h4>Home</h4>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="meals.html" style="color: white; font-style: bold;">
+                            <h4>Menu </h4>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white; font-style: bold;">
+                            <h4>About Us </h4>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white; font-style: bold;">
+                            <h4>Contact Us</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+    </header>
+
+    <!-- breadcrumbs -->
+
+    <nav class="pageinfo" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Breakfast</li>
+        </ol>
+    </nav>
+
+
+    <!-- //breadcrumbs -->
+
+    <div class="innerf-pages section">
+        <div class="container">
+            <!-- grid right -->
+            <div class="py-sm-5 py-3 right-product-grid">
+                <!-- card group 2 -->
+                <h5 class="shop_w3 text-capitalize">
+                    Breakfast</h5>
+                <div class="row card-group my-sm-5 mt-5">
+                    <!-- row2 -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/resize-16145954321713729289bfast.jpg" alt="img" class="card-img-top" style="height: 201px;">
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Egg Sandwich</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 120/- </p>
+                                    <p class="line-through">Rs 120/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+                                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                    </button>
+                                <a href="#" data-toggle="modal" data-target="#myModal1"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 mt-sm-0 mt-5">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/bhature.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Chane Bhature</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 150/-</p>
+                                    <p class="line-through">Rs 150/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+                                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                    </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/kulcha.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Special Aaloo Kulcha</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 90/-</p>
+                                    <p class="line-through">Rs 90/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+                                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                    </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 mt-sm-0 mt-5">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/sandwich.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Sandwich</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 80/-</p>
+                                    <p class="line-through">Rs 80/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+                                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                    </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                </div>
+                <!-- //card group -->
+                <div class="card-group my-5">
+                    <!-- row2 -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3 out_w3">
+                            <div class="men-thumb-item position-relative">
+                                <img src="images/breadegg.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Bread Omellete</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 149/-</p>
+                                    <p class="line-through">Rs 149/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+                                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                    </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/egg.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Boiled Eggs</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 179/-</p>
+                                    <p class="line-through">Rs 179/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+                                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                    </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/dosa.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Dosa</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 179/-</p>
+                                    <p class="line-through">Rs 179/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+                                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                    </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/minispecial.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Thalli</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 199/-</p>
+                                    <p class="line-through">Rs 199/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+                                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                    </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- //card 2 -->
+                </div>
+                <!-- //card group -->
+                <div class="card-group my-5">
+                    <!-- row2 -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3 out_w3">
+                            <div class="men-thumb-item position-relative">
+                                <img src="images/burger.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Veggie-La-Burger</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 79/-</p>
+                                    <p class="line-through">Rs 79/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+                                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                    </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/idli.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Idli</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 119/-</p>
+                                    <p class="line-through">Rs 119/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/pexels-matheus-guimarães-1291712.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Pan Cake</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 189/-</p>
+                                    <p class="line-through">Rs 189/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/pexels-lisa-fotios-1279330.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Chowmein</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 99/-</p>
+                                    <p class="line-through">Rs 99/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- //card 2 -->
+                </div>
+                <!-- //card group -->
+                <!-- card group  -->
+                <div class="card-group">
+                    <!-- row1-->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/slimpuri.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Puri With Chaane</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 49/-</p>
+                                    <p class="line-through">Rs 49/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/lunch.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Frankie</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 99/-</p>
+                                    <p class="line-through">Rs 99/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/pexels-daniela-constantini-5591716.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Egg Sandwich</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 149/-</p>
+                                    <p class="line-through">Rs 149/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/pexels-cats-coming-1395319.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Chinese Special</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 79/-</p>
+                                    <p class="line-through">Rs 79/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- //row  -->
+                </div>
+                <!-- //card group -->
+                <!-- card group  -->
+                <div class="card-group">
+                    <!-- row1-->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/pexels-adrianna-calvo-3719018.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Espresso</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 149/-</p>
+                                    <p class="line-through">Rs 149/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/pexels-chevanon-photography-312418.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Cappuccino</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 199/-</p>
+                                    <p class="line-through">Rs 199/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/oreo.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Oreo Shake</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 99/-</p>
+                                    <p class="line-through">Rs 99/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- card -->
+                    <div class="col-lg-3 col-sm-6 p-0">
+                        <div class="card product-men p-3">
+                            <div class="men-thumb-item">
+                                <img src="images/mango.jpg" alt="img" class="card-img-top">
+
+                                <div class="inner-men-cart-pro">
+                                    <a href="bfastitems.html" class="link-product-add-cart">Order Now</a>
+                                </div>
+
+                            </div>
+                            <!-- card body -->
+                            <div class="card-body  py-3 px-2">
+                                <h5 class="card-title text-capitalize">Mango Juice</h5>
+                                <div class="card-text d-flex justify-content-between">
+                                    <p class="text-dark font-weight-bold">Rs 49/-</p>
+                                    <p class="line-through">Rs 49/-</p>
+                                </div>
+                            </div>
+                            <!-- card footer -->
+                            <div class="card-footer d-flex justify-content-end">
+
+                                <button type="submit" class="hub-cart phub-cart btn">
+											<i class="fa fa-cart-plus" aria-hidden="true"></i>
+										</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //card -->
+                    <!-- //row  -->
+                </div>
+                <!-- //card group -->
+            </div>
+        </div>
+    </div>
+
+    <!-- sign up Modal -->
+    <div class="modal fade" id="myModal_btn" tabindex="-1" role="dialog" aria-labelledby="myModal_btn" aria-hidden="true">
+        <div class="agilemodal-dialog modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Register Now</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+                </div>
+                <div class="modal-body pt-3 pb-5 px-sm-5">
+                    <div class="row">
+                        <div class="col-md-6 mx-auto align-self-center">
+                            <img src="images/logo.png" class="img-fluid" alt="login_image" />
+                        </div>
+                        <div class="col-md-6">
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <label for="recipient-name1" class="col-form-label">Your Name</label>
+                                    <input type="text" class="form-control" placeholder=" " name="Name" id="recipient-name1" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-email" class="col-form-label">Email</label>
+                                    <input type="email" class="form-control" placeholder=" " name="Email" id="recipient-email" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password1" class="col-form-label">Password</label>
+                                    <input type="password" class="form-control" placeholder=" " name="Password" id="password1" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password2" class="col-form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" placeholder=" " name="Confirm Password" id="password2" required="">
+                                </div>
+                                <div class="sub-w3l">
+                                    <div class="sub-agile">
+                                        <input type="checkbox" id="brand2" value="" required="">
+                                        <label for="brand2" class="mb-3">
+                                    <span></span>I Accept to the Terms & Conditions</label>
+                                    </div>
+                                </div>
+                                <div class="right-w3l">
+                                    <input type="submit" class="form-control" value="Register">
+                                </div>
+                            </form>
+
+                            <p class="text-center mt-3">Already a member?
+                                <a href="#" data-toggle="modal" data-target="#exampleModal1" class="text-dark login_btn">
+                            Login Now</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //signup modal -->
+    <!-- signin Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModal1" aria-hidden="true">
+        <div class="agilemodal-dialog modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+                </div>
+                <div class="modal-body  pt-3 pb-5 px-sm-5">
+                    <div class="row">
+                        <div class="col-md-6 align-self-center">
+                            <img src="images/logo.png" class="img-fluid" alt="login_image" />
+                        </div>
+                        <div class="col-md-6">
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Your Name</label>
+                                    <input type="text" class="form-control" placeholder=" " name="Name" id="recipient-name" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-form-label">Password</label>
+                                    <input type="password" class="form-control" placeholder=" " name="Password" required="">
+                                </div>
+                                <div class="right-w3l">
+                                    <input type="submit" class="form-control" value="Login">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- signin Modal -->
+
+
+    <!--Move To Top Page-->
+    <button onclick="topFunction()" id="myBtn" class="fas fa-arrow-circle-up" type="submit">
+        <div class="input--group-button--beat"></div>
+    </button>
+    <!--// Move To Top Page-->
+
+
+
+
+    <!---footer========-->
+    <footer class="footer">
+
+        <div class="section-center">
+            <p class="text">
+                &copy; <span>Food For Health</span>
+            </p>
+        </div>
+
+    </footer>
+
+    <!---End of Footer Section===========-->
+
+
+
+    <!-- script for password match -->
+    <script>
+        window.onload = function() {
+            document.getElementById("password1").onchange = validatePassword;
+            document.getElementById("password2").onchange = validatePassword;
+        }
+
+        function validatePassword() {
+            var pass2 = document.getElementById("password2").value;
+            var pass1 = document.getElementById("password1").value;
+            if (pass1 != pass2)
+                document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+            else
+                document.getElementById("password2").setCustomValidity('');
+            //empty string means no validation error
+        }
+    </script>
+    <script src="js/newcart.js"></script>
+
+    <script>
+        mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>
